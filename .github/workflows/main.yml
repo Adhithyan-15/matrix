@@ -21,6 +21,9 @@ jobs:
           # Example: Do not run Java 8 on Windows
           - java-version: 8
             os: windows-latest
+        include:
+         - java-version: 21
+           os: ubuntu-latest
 
     steps:
       - name: Checkout code
